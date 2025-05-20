@@ -1,0 +1,17 @@
+{
+    'name': "module-animal2",
+    'version' : "1.0",
+    'summary': "Short (1 phrase/line) summary of the module's purpose, used as subtitle on modules listing or apps.openerp.com",
+        
+    'description': " Long description of module's purpose",
+    'author': "PTH",
+    'category': 'Uncategorized',
+    'license': 'LGPL-3',
+    'data': [
+        'wizards/transient_model_views.xml',
+        'views/base_model_views.xml',
+    ],
+    'depends': ['base'],
+    'installable': True,
+    'application': True,
+}
