@@ -8,8 +8,8 @@ class FootballMatch(models.Model):
     date = fields.Date()
     home_club_id = fields.Many2one('football.club', string='Home Club')
     away_club_id = fields.Many2one('football.club', string='Away Club')
-    score_home = fields.Integer()
-    score_away = fields.Integer()
+    home_score = fields.Integer()
+    away_score = fields.Integer()
     tournament_id = fields.Many2one('football.tournament', string='Tournament')
 
     @api.depends('home_club_id', 'away_club_id')

@@ -1,0 +1,47 @@
+<odoo>
+    <record id="view_football_tournament_form" model="ir.ui.view">
+        <field name="name">football.tournament.form</field>
+        <field name="model">football.tournament</field>
+        <field name="arch" type="xml">
+            <form string="Football Tournament">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="year"/>
+                        <field name="club_ids" widget="many2many_tags"/>
+                    </group>
+                    <notebook>
+                        <page string="Matches">
+                            <field name="match_ids">
+                                <list>
+                                    <field name="date"/>
+                                    <field name="home_club_id"/>
+                                    <field name="away_club_id"/>
+                                    <field name="home_score"/>
+                                    <field name="away_score"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_football_tournament_list" model="ir.ui.view">
+        <field name="name">football.tournament.list</field>
+        <field name="model">football.tournament</field>
+        <field name="arch" type="xml">
+            <list string="Football Tournaments">
+                <field name="name"/>
+                <field name="year"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_football_tournament" model="ir.actions.act_window">
+        <field name="name">Giải Đấu</field>
+        <field name="res_model">football.tournament</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

@@ -5,8 +5,7 @@
     <menuitem id="menu_player" name="Cầu Thủ" parent="menu_football_config" action="action_player"/>
     <menuitem id="menu_coach" name="Huấn Luyện Viên" parent="menu_football_config" action="action_coach"/>
     <menuitem id="menu_club" name="Câu Lạc Bộ" parent="menu_football_config" action="action_club"/>
-
-
-
+    <menuitem id="menu_league" name="Giải Đấu" parent="menu_football_config" action="module_v_league.action_football_tournament"/>
+    <menuitem id="menu_match" name="Trận Đấu" parent="menu_football_config" action="action_match"/>
 
 </odoo>
