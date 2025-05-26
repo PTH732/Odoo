@@ -1,0 +1,55 @@
+<odoo>
+    <record id="coach_view_form" model="ir.ui.view">
+        <field name="name">football.coach.form</field>
+        <field name="model">football.coach</field>
+        <field name="arch" type="xml">
+            <form string="Coach">
+                <sheet>
+                    <field name="image" widget='image' class='oe_avatar' />
+                    <div class='oe_avatar'>
+                        <label for='name'></label>
+                        <h1>
+                            <field name='name'></field>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="country" />
+                            <field name="age" />
+                        </group>
+                        <group>
+                            <field name="experience_years" />
+                            <field name="current_club_id" />
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="coach_view_list" model="ir.ui.view">
+        <field name="name">football.coach.list</field>
+        <field name="model">football.coach</field>
+        <field name="arch" type="xml">
+            <list string="coach">
+                <field name="name" />
+                <field name="country" />
+                <field name="age" />
+                <field name="experience_years" />
+                <field name="current_club_id" />               
+            </list>
+        </field>
+    </record>
+
+    <record id="coach_action" model="ir.actions.act_window">
+        <field name="name">Coachs</field>
+        <field name="res_model">football.coach</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+  <record id="action_coach" model="ir.actions.act_window">
+    <field name="name">HLV</field>
+    <field name="res_model">football.coach</field>
+    <field name="view_mode">list,form</field>
+  </record>
+</odoo>

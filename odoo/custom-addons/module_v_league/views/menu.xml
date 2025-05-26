@@ -1,0 +1,10 @@
+<odoo>
+    <menuitem id="menu_football_root" name="Giai bong da"/>
+    <menuitem id="menu_football_config" name="Quản Lý" parent="menu_football_root"/>
+
+    <menuitem id="menu_player" name="Cầu Thủ" parent="menu_football_config" action="action_player"/>
+    <menuitem id="menu_coach" name="Huấn Luyện Viên" parent="menu_football_config" action="action_coach"/>
+
+
+
+</odoo>

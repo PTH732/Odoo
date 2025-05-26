@@ -1,0 +1,15 @@
+<odoo>
+    <data noupdate="1">
+
+        <!-- Group: Football User -->
+        <record id="group_football_user" model="res.groups">
+            <field name="name">Football User</field>
+        </record>
+
+        <!-- Group: Football Manager -->
+        <record id="group_football_manager" model="res.groups">
+            <field name="name">Football Manager</field>
+        </record>
+
+    </data>
+</odoo>

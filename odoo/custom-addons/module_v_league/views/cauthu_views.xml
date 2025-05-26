@@ -30,8 +30,8 @@
     </record>
 
     <record id="player_view_list" model="ir.ui.view">
-        <field name="name">player1.list</field>
-        <field name="model">player1</field>
+        <field name="name">player.list</field>
+        <field name="model">player</field>
         <field name="arch" type="xml">
             <list string="Player">
                 <field name="name" />
@@ -45,21 +45,14 @@
     </record>
 
     <record id="player_action" model="ir.actions.act_window">
-        <field name="name">Players1</field>
-        <field name="res_model">player1</field>
+        <field name="name">Players</field>
+        <field name="res_model">player</field>
         <field name="view_mode">list,form</field>
     </record>
 
-    <menuitem 
-    id="player_menu" 
-    name="Players1" 
-    groups="base.group_user"
-    />
-    <menuitem 
-    id="player_menu_1" 
-    name="Players1"
-    parent="player_menu"
-    action="player_action" 
-    groups="base.group_user"
-    />
+  <record id="action_player" model="ir.actions.act_window">
+    <field name="name">Cầu Thủ</field>
+    <field name="res_model">football.player</field>
+    <field name="view_mode">list,form</field>
+  </record>
 </odoo>
