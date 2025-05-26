@@ -40,6 +40,7 @@
         <field name="arch" type="xml">
             <list string="Player">
                 <field name="name" />
+                <field name="club_id" />
                 <field name="hometown" />
                 <field name="gender" />
                 <field name="position" />

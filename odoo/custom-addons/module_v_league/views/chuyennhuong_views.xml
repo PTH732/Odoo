@@ -1,0 +1,38 @@
+<odoo>
+    <record id="view_transfer_form" model="ir.ui.view">
+        <field name="name">football.transfer.form</field>
+        <field name="model">football.transfer</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="player_id"/>
+                    <field name="from_club_id"/>
+                    <field name="to_club_id"/>
+                    <field name="transfer_date"/>
+                    <field name="transfer_fee"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_transfer_list" model="ir.ui.view">
+        <field name="name">football.transfer.list</field>
+        <field name="model">football.transfer</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="player_id"/>
+                <field name="from_club_id"/>
+                <field name="to_club_id"/>
+                <field name="transfer_date"/>
+                <field name="transfer_fee"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_transfer" model="ir.actions.act_window">
+        <field name="name">Chuyển Nhượng</field>
+        <field name="res_model">football.transfer</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+</odoo>

@@ -15,6 +15,8 @@
         "views/clb_views.xml",
         "views/giaidau_views.xml",
         "views/trandau_views.xml",
+        "views/bxh_views.xml",
+        "views/chuyennhuong_views.xml",
         "views/menu.xml"
         
     ],

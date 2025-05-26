@@ -11,6 +11,7 @@ class FootballMatch(models.Model):
     home_score = fields.Integer()
     away_score = fields.Integer()
     tournament_id = fields.Many2one('football.tournament', string='Tournament')
+    match_date = fields.Datetime(string="Match Date", required=True)
 
     @api.depends('home_club_id', 'away_club_id')
     def _compute_name(self):

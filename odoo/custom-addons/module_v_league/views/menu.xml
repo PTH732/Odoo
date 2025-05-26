@@ -7,5 +7,7 @@
     <menuitem id="menu_club" name="Câu Lạc Bộ" parent="menu_football_config" action="action_club"/>
     <menuitem id="menu_league" name="Giải Đấu" parent="menu_football_config" action="module_v_league.action_football_tournament"/>
     <menuitem id="menu_match" name="Trận Đấu" parent="menu_football_config" action="action_match"/>
+    <menuitem id="menu_bxh" name="Bảng Xếp Hạng" parent="menu_football_config" action="action_bxh"/>
+    <menuitem id="menu_transfer" name="Chuyển Nhượng" parent="menu_football_config" action="action_transfer"/>
 
 </odoo>

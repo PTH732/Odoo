@@ -6,5 +6,7 @@ class FootballTournament(models.Model):
 
     name = fields.Char(required=True)
     year = fields.Integer()
+    start_date = fields.Date(string="Start Date")
+    end_date = fields.Date(string="End Date")
     club_ids = fields.Many2many('football.club', string='Participating Clubs')
     match_ids = fields.One2many('football.match', 'tournament_id', string='Matches')

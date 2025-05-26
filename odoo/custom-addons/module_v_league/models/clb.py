@@ -8,5 +8,7 @@ class FootballClub(models.Model):
     image = fields.Binary(string='Image', attachment = True)
     city = fields.Char()
     stadium = fields.Char()
+    ingredient = fields.Char()
+    cup = fields.Char()
     coach_id = fields.Many2one('football.coach', string='Coach')
     player_ids = fields.One2many('football.player', 'club_id', string='Players')
