@@ -4,6 +4,8 @@
 
     <menuitem id="menu_player" name="Cầu Thủ" parent="menu_football_config" action="action_player"/>
     <menuitem id="menu_coach" name="Huấn Luyện Viên" parent="menu_football_config" action="action_coach"/>
+    <menuitem id="menu_club" name="Câu Lạc Bộ" parent="menu_football_config" action="action_club"/>
+
 
 
 

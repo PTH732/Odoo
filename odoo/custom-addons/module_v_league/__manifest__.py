@@ -12,6 +12,7 @@
         "security/ir.model.access.csv",
         "views/cauthu_views.xml",
         "views/hlv_views.xml",
+        "views/clb_views.xml",
         "views/menu.xml"
         
     ],

@@ -6,10 +6,10 @@ class FootballPlayer(models.Model):
  
     name = fields.Char(string='Name', required = True)
     image = fields.Binary(string='Image', attachment = True)
-    country = fields.Char(string='Country')
+    hometown = fields.Char(string='Hometown')
     gender = fields.Selection([('male', 'Male'), ('female', 'Female')], string='Gender', default='male')
     day_of_birth = fields.Datetime(string='Day of birth')
-    position_name = fields.Char('Position', groups='module2.group_player_manager')
+    position = fields.Char('Position', groups='module2.group_player_manager')
     height = fields.Float('Height')
     weight = fields.Float('Weight')
 
