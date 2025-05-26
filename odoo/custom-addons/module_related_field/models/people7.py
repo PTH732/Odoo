@@ -6,3 +6,4 @@ class People7(models.Model):
     _description = 'People7'
 
     name = fields.Char(string='Name')
+
