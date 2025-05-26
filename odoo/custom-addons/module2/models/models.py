@@ -1,8 +1,8 @@
 from odoo import models, fields
 
-class Player(models.Model):
-    _name = 'player'
-    _description = 'Player'
+class Player1(models.Model):
+    _name = 'player1'
+    _description = 'Player1'
 
     name = fields.Char(string='Name', required = True)
     image = fields.Binary(string='Image', attachment = True)

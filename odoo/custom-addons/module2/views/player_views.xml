@@ -1,9 +1,9 @@
 <odoo>
     <record id="player_view_form" model="ir.ui.view">
-        <field name="name">player.form</field>
-        <field name="model">player</field>
+        <field name="name">player1.form</field>
+        <field name="model">player1</field>
         <field name="arch" type="xml">
-            <form string="Player">
+            <form string="Player1">
                 <sheet>
                     <field name="image" widget='image' class='oe_avatar' />
                     <div class='oe_avatar'>
@@ -33,7 +33,7 @@
         <field name="name">player1.list</field>
         <field name="model">player1</field>
         <field name="arch" type="xml">
-            <list string="Player">
+            <list string="Player1">
                 <field name="name" />
                 <field name="country" />
                 <field name="gender" />
