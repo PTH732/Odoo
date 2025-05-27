@@ -10,13 +10,6 @@ class FootballTransfer(models.Model):
     transfer_date = fields.Date()
     transfer_fee = fields.Float()
 
-    def _onchange_player_id(self):
-        if self.player_id:
-            self.from_club_id = self.player_id.club_id
-
-    def _onchange_to_club_id(self):
-        if self.player_id and self.to_club_id:
-            self.player_id.club_id = self.to_club_id
 
 
 
