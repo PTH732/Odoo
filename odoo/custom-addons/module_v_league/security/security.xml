@@ -1,14 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data noupdate="1">
 
-        <!-- Group: Football User -->
-        <record id="group_football_user" model="res.groups">
-            <field name="name">Football User</field>
+        <!-- Nhom: Quan tri he thong-->
+        <record id="group_admin" model="res.groups">
+            <field name="name">Quản trị hệ thống</field>
         </record>
 
-        <!-- Group: Football Manager -->
-        <record id="group_football_manager" model="res.groups">
-            <field name="name">Football Manager</field>
+        <!-- Nhóm: Quản lý đội bóng -->
+        <record id="group_team_manager" model="res.groups">
+            <field name="name">Quản lý đội bóng</field>
+        </record>
+
+        <!-- Nhóm: Quản lý cầu thủ -->
+        <record id="group_player_manager" model="res.groups">
+            <field name="name">Quản lý cầu thủ</field>
+        </record>
+
+        <!-- Nhóm: Cầu thủ -->
+        <record id="group_player" model="res.groups">
+            <field name="name">Cầu thủ</field>
+        </record>
+
+        <!-- Nhóm: Huấn luyện viên -->
+        <record id="group_coach" model="res.groups">
+            <field name="name">Huấn luyện viên</field>
+        </record>
+
+        <!-- Nhóm: Quản lý lịch thi đấu -->
+        <record id="group_schedule_manager" model="res.groups">
+            <field name="name">Quản lý lịch thi đấu</field>
         </record>
 
     </data>

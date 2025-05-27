@@ -1,10 +1,39 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_football_player_user,football.player.user,model_football_player,module_v_league.group_football_user,1,0,0,0
-access_football_player_manager,football.player.manager,model_football_player,module_v_league.group_football_manager,1,1,1,1
-access_football_coach_user,football.coach.user,model_football_coach,module_v_league.group_football_user,1,0,0,0
-access_football_coach_manager,football.coach.manager,model_football_coach,module_v_league.group_football_manager,1,1,1,1
-access_football_club_manager,football.club.manager,model_football_club,module_v_league.group_football_manager,1,1,1,1
-access_football_tournament_manager,football.tournament.manager,model_football_tournament,module_v_league.group_football_manager,1,1,1,1
-access_football_match_manager,football.match.manager,model_football_match,module_v_league.group_football_manager,1,1,1,1
-access_football_transfer_manager,football.transfer.manager,model_football_transfer,module_v_league.group_football_manager,1,1,1,1
-access_football_standing_manager,football.standing.manager,model_football_standing,module_v_league.group_football_manager,1,1,1,1
+access_admin_all,admin all,base.model_res_users,base.group_system,1,1,1,1
+access_admin_player,admin player,model_football_player,base.group_system,1,1,1,1
+access_admin_transfer,admin transfer,model_football_transfer,base.group_system,1,1,1,1
+access_admin_coach,admin coach,model_football_coach,base.group_system,1,1,1,1
+access_admin_club,admin club,model_football_club,base.group_system,1,1,1,1
+access_admin_match,admin match,model_football_match,base.group_system,1,1,1,1
+access_admin_tournament,admin tournament,model_football_tournament,base.group_system,1,1,1,1
+access_admin_standing,admin standing,model_football_standing,base.group_system,1,1,1,1
+
+access_team_manager_player,team manager player,model_football_player,module_v_league.group_team_manager,1,1,1,1
+access_team_manager_transfer,team manager transfer,model_football_transfer,module_v_league.group_team_manager,1,1,1,1
+access_team_manager_coach,team manager coach,model_football_coach,module_v_league.group_team_manager,1,1,1,1
+access_team_manager_club,team manager club,model_football_club,module_v_league.group_team_manager,1,1,1,1
+access_team_manager_match,team manager match,model_football_match,module_v_league.group_team_manager,1,0,0,0
+access_team_manager_tournament,team manager tournament,model_football_tournament,module_v_league.group_team_manager,1,0,0,0
+access_team_manager_standing,team manager standing,model_football_standing,module_v_league.group_team_manager,1,0,0,0
+
+access_player_player,player player,model_football_player,module_v_league.group_player,1,0,0,0
+access_player_transfer,player transfer,model_football_transfer,module_v_league.group_player,1,0,0,0
+access_player_coach,player coach,model_football_coach,module_v_league.group_player,1,0,0,0
+access_player_club,player club,model_football_club,module_v_league.group_player,1,0,0,0
+access_player_match,player match,model_football_match,module_v_league.group_player,1,0,0,0
+access_player_tournament,player tournament,model_football_tournament,module_v_league.group_player,1,0,0,0
+access_player_standing,player standing,model_football_standing,module_v_league.group_player,1,0,0,0
+
+access_coach_player,coach player,model_football_player,module_v_league.group_coach,1,0,0,0
+access_coach_transfer,coach transfer,model_football_transfer,module_v_league.group_coach,1,0,0,0
+access_coach_coach,coach coach,model_football_coach,module_v_league.group_coach,1,0,0,0
+access_coach_club,coach club,model_football_club,module_v_league.group_coach,1,0,0,0
+access_coach_match,coach match,model_football_match,module_v_league.group_coach,1,0,0,0
+access_coach_tournament,coach tournament,model_football_tournament,module_v_league.group_coach,1,0,0,0
+access_coach_standing,coach standing,model_football_standing,module_v_league.group_coach,1,0,0,0
+
+access_schedule_manager_match,schedule manager match,model_football_match,module_v_league.group_schedule_manager,1,1,1,1
+access_schedule_manager_tournament,schedule manager tournament,model_football_tournament,module_v_league.group_schedule_manager,1,1,1,1
+access_schedule_manager_standing,schedule manager standing,model_football_standing,module_v_league.group_schedule_manager,1,1,1,1
+access_schedule_manager_club,schedule manager club,model_football_club,module_v_league.group_schedule_manager,1,0,0,0
+access_schedule_manager_player,schedule manager player,model_football_player,module_v_league.group_schedule_manager,1,0,0,0

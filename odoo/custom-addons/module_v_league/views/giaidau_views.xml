@@ -8,6 +8,7 @@
                     <group>
                         <field name="name"/>
                         <field name="year"/>
+                        <field name="match_now"/>
                         <field name="start_date"/>
                         <field name="end_date"/>
                         <field name="club_ids" widget="many2many_tags"/>
@@ -36,6 +37,7 @@
         <field name="arch" type="xml">
             <list string="Football Tournaments">
                 <field name="name"/>
+                <field name="match_now"/>
                 <field name="start_date"/>
                 <field name="end_date"/>
                 <field name="year"/>
