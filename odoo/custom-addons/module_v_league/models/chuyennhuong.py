@@ -9,7 +9,3 @@ class FootballTransfer(models.Model):
     to_club_id = fields.Many2one('football.club', string='To Club')
     transfer_date = fields.Date()
     transfer_fee = fields.Float()
-
-
-
-
