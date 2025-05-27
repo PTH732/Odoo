@@ -47,9 +47,9 @@
         <field name="view_mode">list,form</field>
     </record>
 
-  <record id="action_coach" model="ir.actions.act_window">
-    <field name="name">HLV</field>
-    <field name="res_model">football.coach</field>
-    <field name="view_mode">list,form</field>
-  </record>
+    <record id="action_coach" model="ir.actions.act_window">
+        <field name="name">HLV</field>
+        <field name="res_model">football.coach</field>
+        <field name="view_mode">list,form</field>
+    </record>
 </odoo>

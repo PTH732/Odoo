@@ -56,9 +56,9 @@
         <field name="view_mode">list,form</field>
     </record>
 
-  <record id="action_player" model="ir.actions.act_window">
-    <field name="name">Cầu Thủ</field>
-    <field name="res_model">football.player</field>
-    <field name="view_mode">list,form</field>
-  </record>
+    <record id="action_player" model="ir.actions.act_window">
+        <field name="name">Cầu Thủ</field>
+        <field name="res_model">football.player</field>
+        <field name="view_mode">list,form</field>
+    </record>
 </odoo>
