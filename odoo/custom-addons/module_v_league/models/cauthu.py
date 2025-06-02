@@ -9,7 +9,7 @@ class FootballPlayer(models.Model):
     hometown = fields.Char(string='Hometown')
     gender = fields.Selection([('male', 'Male'), ('female', 'Female')], string='Gender', default='male')
     day_of_birth = fields.Datetime(string='Day of birth')
-    position = fields.Char('Position', groups='module2.group_player_manager')
+    position = fields.Char('Position')
     height = fields.Float('Height')
     weight = fields.Float('Weight')
 

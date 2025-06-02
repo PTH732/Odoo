@@ -17,10 +17,11 @@
         "views/trandau_views.xml",
         "views/bxh_views.xml",
         "views/chuyennhuong_views.xml",
+        'views/templates.xml',
         "views/menu.xml"
         
     ],
-    'depends': ['base'],
+    'depends': ['base', 'website'],
     'installable': True,
     'application': True,
 }
