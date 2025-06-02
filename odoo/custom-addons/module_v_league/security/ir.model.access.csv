@@ -16,6 +16,11 @@ access_team_manager_match,team manager match,model_football_match,module_v_leagu
 access_team_manager_tournament,team manager tournament,model_football_tournament,module_v_league.group_team_manager,1,0,0,0
 access_team_manager_standing,team manager standing,model_football_standing,module_v_league.group_team_manager,1,0,0,0
 
+access_player_manager_player,player manager player,model_football_player,module_v_league.group_player_manager,1,1,1,1
+access_player_manager_transfer,player manager transfer,model_football_transfer,module_v_league.group_player_manager,1,1,1,1
+access_player_manager_club,player manager club,model_football_club,module_v_league.group_player_manager,1,0,0,0
+access_player_manager_coach,player manager coach,model_football_coach,module_v_league.group_player_manager,1,0,0,0
+
 access_player_player,player player,model_football_player,module_v_league.group_player,1,0,0,0
 access_player_transfer,player transfer,model_football_transfer,module_v_league.group_player,1,0,0,0
 access_player_coach,player coach,model_football_coach,module_v_league.group_player,1,0,0,0

@@ -1,13 +1,16 @@
 <odoo>
-    <menuitem id="menu_football_root" name="Giai bong da"/>
-    <menuitem id="menu_football_config" name="Quản Lý" parent="menu_football_root"/>
+    <menuitem id="menu_football_root" name="Giải bóng đá v-league"/>
 
-    <menuitem id="menu_player" name="Cầu Thủ" parent="menu_football_config" action="action_player"/>
-    <menuitem id="menu_coach" name="Huấn Luyện Viên" parent="menu_football_config" action="action_coach"/>
-    <menuitem id="menu_club" name="Câu Lạc Bộ" parent="menu_football_config" action="action_club"/>
-    <menuitem id="menu_league" name="Giải Đấu" parent="menu_football_config" action="module_v_league.action_football_tournament"/>
-    <menuitem id="menu_match" name="Trận Đấu" parent="menu_football_config" action="action_match"/>
-    <menuitem id="menu_bxh" name="Bảng Xếp Hạng" parent="menu_football_config" action="action_bxh"/>
-    <menuitem id="menu_transfer" name="Chuyển Nhượng" parent="menu_football_config" action="action_transfer"/>
+    <menuitem id="menu_bxh" name="Bảng Xếp Hạng" parent="menu_football_root" action="action_bxh" sequence="1"/>
+
+    <menuitem id="menu_tournament_manage" name="Quản Lý Giải Đấu" parent="menu_football_root" sequence="2"/>
+    <menuitem id="menu_league" name="Giải Đấu" parent="menu_tournament_manage" action="module_v_league.action_football_tournament"/>
+    <menuitem id="menu_match" name="Trận Đấu" parent="menu_tournament_manage" action="action_match"/>
+
+    <menuitem id="menu_football_config" name="Quản Lý Đội Bóng" parent="menu_football_root" sequence="3"/>
+    <menuitem id="menu_club" name="Câu Lạc Bộ" parent="menu_football_config" action="action_club" sequence="1"/>
+    <menuitem id="menu_coach" name="Huấn Luyện Viên" parent="menu_football_config" action="action_coach" sequence="2"/>
+    <menuitem id="menu_player" name="Cầu Thủ" parent="menu_football_config" action="action_player" sequence="3"/>
+    <menuitem id="menu_transfer" name="Chuyển Nhượng" parent="menu_football_config" action="action_transfer" sequence="4"/>
 
 </odoo>
