@@ -1,31 +1,31 @@
 <!-- module_v_league/views/templates.xml -->
 <odoo>
-  <template id="players_template" name="Danh sách cầu thủ">
-    <t t-call="website.layout">
-      <div class="container">
-        <h1>Danh sách cầu thủ</h1>
-        <ul>
-          <t t-foreach="players" t-as="player">
-            <li>
-              <a t-att-href="'/vleague/player/' + str(player.id)">
-                <strong><t t-esc="player.name"/></strong>
-              </a> – <t t-esc="player.position"/>
-            </li>
-          </t>
-        </ul>
-      </div>
-    </t>
-  </template>
+    <template id="players_template" name="Danh sách cầu thủ">
+        <t t-call="website.layout">
+            <div class="container">
+                <h1>Danh sách cầu thủ</h1>
+                <ul>
+                    <t t-foreach="players" t-as="player">
+                        <li>
+                            <a t-att-href="'/vleague/player/' + str(player.id)">
+                                <strong><t t-esc="player.name"/></strong>
+                            </a> – <t t-esc="player.position"/>
+                        </li>
+                    </t>
+                </ul>
+            </div>
+        </t>
+    </template>
 
-  <template id="player_detail_template" name="Chi tiết cầu thủ">
-    <t t-call="website.layout">
-      <div class="container">
-        <h1><t t-esc="player.name"/></h1>
-        <p>Vị trí: <t t-esc="player.position"/></p>
-        <p>Chiều cao: <t t-esc="player.height"/> cm</p>
-        <p>Cân nặng: <t t-esc="player.weight"/> kg</p>
-        <p>CLB: <t t-esc="player.club_id.name"/></p>
-      </div>
-    </t>
-  </template>
+    <template id="player_detail_template" name="Chi tiết cầu thủ">
+        <t t-call="website.layout">
+            <div class="container">
+                <h1><t t-esc="player.name"/></h1>
+                <p>Vị trí: <t t-esc="player.position"/></p>
+                <p>Chiều cao: <t t-esc="player.height"/> cm</p>
+                <p>Cân nặng: <t t-esc="player.weight"/> kg</p>
+                <p>CLB: <t t-esc="player.club_id.name"/></p>
+            </div>
+        </t>
+    </template>
 </odoo>
