@@ -8,7 +8,7 @@ class FootballPlayer(models.Model):
     image = fields.Binary(string='Image', attachment = True)
     hometown = fields.Char(string='Hometown')
     gender = fields.Selection([('male', 'Male'), ('female', 'Female')], string='Gender', default='male')
-    day_of_birth = fields.Datetime(string='Day of birth')
+    day_of_birth = fields.Date(string='Day of birth')
     position = fields.Char('Position')
     height = fields.Float('Height')
     weight = fields.Float('Weight')

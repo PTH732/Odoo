@@ -1,15 +1,53 @@
-<!-- module_v_league/views/templates.xml -->
 <odoo>
     <template id="players_template" name="Danh sách cầu thủ">
         <t t-call="website.layout">
             <div class="container">
-                <h1>Danh sách cầu thủ</h1>
+                
+                <t t-if="tournament">
+                    <h1 style="font-size: 22px;">Giải đấu: <t t-esc="tournament.name"/></h1>
+                </t>
+
+                <h1 style="font-size: 16px;">Câu lạc bộ</h1>
+                <ul>
+                    <t t-foreach="clubs" t-as="club">
+                        <li>
+                            <strong><t t-esc="club.name"/></strong>
+                            – Stadium: <t t-esc="club.stadium"/> – HLV: <t t-esc="club.coach_id.name"/>
+                        </li>
+                    </t>
+                </ul>
+
+                <h2 style="font-size: 16px;">Bảng xếp hạng</h2>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>CLB</th>
+                            <th>Điểm</th>
+                            <th>Thắng</th>
+                            <th>Hòa</th>
+                            <th>Thua</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-foreach="standings" t-as="s">
+                            <tr>
+                                <td><t t-esc="s.club_id.name"/></td>
+                                <td><t t-esc="s.points"/></td>
+                                <td><t t-esc="s.won"/></td>
+                                <td><t t-esc="s.draw"/></td>
+                                <td><t t-esc="s.lost"/></td>
+                            </tr>
+                        </t>
+                    </tbody>
+                </table>
+
+                <h3 style="font-size: 16px;">Danh sách cầu thủ</h3>
                 <ul>
                     <t t-foreach="players" t-as="player">
                         <li>
                             <a t-att-href="'/vleague/player/' + str(player.id)">
                                 <strong><t t-esc="player.name"/></strong>
-                            </a> – <t t-esc="player.position"/>
+                            </a> – <t t-esc="player.position"/> – CLB: <t t-esc="player.club_id.name"/>
                         </li>
                     </t>
                 </ul>
@@ -19,12 +57,14 @@
 
     <template id="player_detail_template" name="Chi tiết cầu thủ">
         <t t-call="website.layout">
-            <div class="container">
+            <div class="container mt-4">
                 <h1><t t-esc="player.name"/></h1>
-                <p>Vị trí: <t t-esc="player.position"/></p>
-                <p>Chiều cao: <t t-esc="player.height"/> cm</p>
-                <p>Cân nặng: <t t-esc="player.weight"/> kg</p>
-                <p>CLB: <t t-esc="player.club_id.name"/></p>
+                <p><strong>Vị trí:</strong> <t t-esc="player.position"/></p>
+                <p><strong>CLB:</strong> <t t-esc="player.club_id.name"/></p>
+                <p><strong>Quê Quán:</strong> <t t-esc="player.hometown"/></p>
+                <p><strong>Ngày Sinh:</strong> <t t-esc="player.day_of_birth"/></p>
+
+                <a href="/vleague" class="btn btn-secondary mt-3">← Quay lại danh sách</a>
             </div>
         </t>
     </template>

@@ -3,7 +3,9 @@ from odoo import models, fields
 class FootballClub(models.Model):
     _name = 'football.club'
     _description = 'Football Club'
-
+    _sql_constraints = [
+        ('unique_club_name', 'unique(name)', 'Tên câu lạc bộ phải là duy nhất.')
+    ]
     name = fields.Char(required=True)
     image = fields.Binary(string='Image', attachment = True)
     city = fields.Char()
